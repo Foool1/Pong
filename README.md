@@ -10,9 +10,7 @@ Pong is a classic arcade game where you control a paddle to bounce a ball and sc
 
 ## Features:
 - Classic and timeless gameplay.
-- Single-player and multiplayer modes.
-- Adjustable game speed and difficulty.
-- Keep track of your high scores.
+- Adjustable game speed.
 
 ## Installation:
 1. Download the game file.
