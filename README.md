@@ -1,19 +1,15 @@
-# Pong Game
+## Pong
 
-## Description:
-Pong is a classic arcade game where you control a paddle to bounce a ball and score points against your opponent. It's a simple, yet addictive game that's perfect for quick fun.
+To klasyczna gra w Pong napisana w Pythonie, gdzie dwaj gracze sterują paletkami, próbując odbić piłkę i zdobyć punkty.
+Jak używać
 
-## How to Play:
-1. Use the arrow keys to control your paddle.
-2. Bounce the ball back and forth, aiming to score points by getting the ball past your opponent.
-3. The first player to reach the 8 score wins the game.
+- Klonuj repozytorium lub pobierz plik.
+- Uruchom pong.py.
+- Gracze sterują paletkami za pomocą klawiatury:
+-  Gracz 1: W/S (góra/dół)
+-  Gracz 2: Strzałki w górę/w dół
+-  Celem jest odbicie piłki i zdobycie punktu, gdy przeciwnik nie zdoła jej odbić.
 
-## Features:
-- Classic and timeless gameplay.
-- Adjustable game speed.
+Wymagania
 
-## Installation:
-1. Download the game file.
-2. change speed ratio in 59,60,61 line for adapted to your device speed.
-
-Enjoy a friendly match of Pong and aim for victory!
+    Python 3.x
