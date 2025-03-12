@@ -1,6 +1,26 @@
 import turtle
 import time
 
+def platform_a_up():
+    y = platform_a.ycor()
+    y += 20
+    platform_a.sety(y)
+
+def platform_a_down():
+    y = platform_a.ycor()
+    y -= 20
+    platform_a.sety(y)
+
+def platform_b_up():
+    y = platform_b.ycor()
+    y += 20
+    platform_b.sety(y)
+
+def platform_b_down():
+    y = platform_b.ycor()
+    y -= 20
+    platform_b.sety(y)
+
 wn = turtle.Screen()
 wn.title("Pong Game")
 wn.bgcolor("black")
@@ -8,7 +28,6 @@ wn.setup(width=800, height=600)
 wn.tracer(0)
 
 #Platform A
-
 platform_a = turtle.Turtle()
 platform_a.speed(0)
 platform_a.color("red")
@@ -27,7 +46,6 @@ platform_b.penup()
 platform_b.goto(350,0)
 
 #Ball
-
 ball = turtle.Turtle()
 ball.speed(0)
 ball.color("white")
@@ -37,7 +55,6 @@ ball.penup()
 ball.goto(0,0)
 
 #ScoreBoard
-
 board = turtle.Turtle()
 board.speed(0)
 board.color("white")
@@ -60,27 +77,6 @@ speed = 0.03
 ball.cx = 0.03
 ball.cy = 0.03
 
-
-def platform_a_up():
-    y = platform_a.ycor()
-    y += 20
-    platform_a.sety(y)
-
-def platform_a_down():
-    y = platform_a.ycor()
-    y -= 20
-    platform_a.sety(y)
-
-def platform_b_up():
-    y = platform_b.ycor()
-    y += 20
-    platform_b.sety(y)
-
-def platform_b_down():
-    y = platform_b.ycor()
-    y -= 20
-    platform_b.sety(y)
-
 wn.listen()
 wn.onkeypress(platform_a_up, "w")
 wn.onkeypress(platform_a_down, "s")
@@ -90,7 +86,6 @@ player1 = 0
 player2 = 0
 
 while True:
-
     wn.update()
     ball.setx(ball.xcor() + ball.cx)
     ball.sety(ball.ycor() + ball.cy)
